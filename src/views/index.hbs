@@ -1,0 +1,41 @@
+
+<html>
+	<head>
+		<title>Stock Listings</title>
+		<link
+			href='https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'
+			rel='stylesheet'
+		/>
+	</head>
+	<body class='bg-gray-100 font-sans leading-normal tracking-normal'>
+
+		<div class='container mx-auto px-4'>
+
+			<h1 class='text-3xl py-4'>Stock Listings</h1>
+
+			<div
+				class='overflow-x-auto bg-white rounded-lg shadow overflow-y-auto relative'
+			>
+				<table
+					class='border-collapse table-auto w-full whitespace-no-wrap bg-white table-striped relative'
+				>
+					<thead>
+						<tr class='text-left'>
+							<th class='py-2 px-3 bg-gray-200'>Name</th>
+							<th class='py-2 px-3 bg-gray-200'>Symbol</th>
+							<th class='py-2 px-3 bg-gray-200'>Price</th>
+						</tr>
+					</thead>
+					<tbody
+						id='stock-table'
+						class='h-96 overflow-y-scroll overflow-hidden'
+					>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+
+		<script src='/script.js'></script>
+	</body>
+</html>
